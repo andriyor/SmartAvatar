@@ -4,7 +4,7 @@
         Чтобы получить токен -- перейдите по ссылке, разрешните доступ и из адресной строки скопируйте занчение access_token
 http://oauth.vk.com/authorize?response_type=token&client_id=3213852&scope=photos,friends,offline,wall,messages
 */
-$token = ''; //Токен
+$token = '1f4bb92d3d3d75c5214c594b0590a0e47959fe8973381ef31214333185e39e687eb9514f406ecb05acae8'; //Токен
 $skype = 'ololo'; //Логин в скайпе
 $msg   = "Ты пидор"; //Сообщение на аватарке
 
@@ -27,7 +27,7 @@ while (true) {
         $requestCount = count($getRequests['response']);
         //Получаем данные из скайпа
         //Получаем статус онлайн\оффлайн
-        $skype = file_get_contents('http://mystatus.skype.com/'.$skype.'.txt');
+        //$skype = file_get_contents('http://mystatus.skype.com/'.$skype.'.txt');
         //А тут уже работам с созданием пикчи
         //Клеим фон и интерфейс
         $path  = dirname(__FILE__); 

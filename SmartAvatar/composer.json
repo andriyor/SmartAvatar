@@ -1,0 +1,7 @@
+{
+    "require": {
+        "php":">= 7.0.15",
+        "curl/curl":"dev-master",
+        "ext-gd": "*"
+    }
+}
